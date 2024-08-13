@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <section class="landing-page" id="home">
+    <section class="landing-page" id="landing">
         <div class="info">
             <div class="container">
                 <p class="career-title"> Robotics Engineer and Software Developer</p>
@@ -23,7 +23,9 @@
             </div>
             <img src="assets/perfil.JPEG">
         </div>
-        <span>z</span>
+        <div class="container-fluid">
+            <span onclick="scrollWindow('aboutme')"><i class="bi bi-arrow-down-short"></i></span>
+        </div>
     </section>
 
     <nav class="navbar fixed-top navbar-expand-lg background-navbar" id="navbar">
@@ -36,13 +38,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" onclick="scrollWindow('landing')">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about-me">About me</a>
+                        <a class="nav-link" onclick="scrollWindow('aboutme')">About me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link" onclick="scrollWindow('projects')">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " onclick="scrollWindow('achievements')">Achievements</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="#">Contact</a>
@@ -70,7 +75,6 @@
             <img src="assets/about.JPEG">
         </div>
     </section>
-
 
     <section class="projects" id="projects">
         <h1>Projects</h1>
@@ -101,6 +105,24 @@
         </div>
     </section>
 
+    <section class="achievements" id="achievements">
+        <h1>achievements</h1>
+        <div class="info">
+            <div class="container">
+                <p class="description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nisi
+                    repudiandae eius distinctio ex nulla numquam nam modi, ut excepturi incidunt mollitia iure quis est
+                    nemo fugiat consectetur! Accusamus, expedita.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloribus labore, totam maxime
+                    nobis corporis. Eaque quisquam nostrum, esse doloribus natus consequuntur voluptatem a repellat et
+                    fuga? Deserunt, vero error.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere necessitatibus perferendis ullam eum
+                    unde ex recusandae inventore eveniet quos nobis doloremque, mollitia quod veritatis, soluta fugit!
+                    Laborum neque nam officiis!
+                </p>
+            </div>
+            <img src="assets/about.JPEG">
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
